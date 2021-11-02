@@ -26,10 +26,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Git Clone Action
-        uses: sudosubin/git-clone-action@v1.0.1
+      - name: Checkout IBM/cloud-pak repository
+        uses: actions/checkout@v2
         with:
-          # Repository owner and name. Ex: sudosubin/git-clone-action
           repository: IBM/cloud-pak
           
       # Runs a single command using the runners shell
